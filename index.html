@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <script src="script.js"></script>
+    <style>
+      /* Style the form container */
+      .form-container {
+        max-width: 500px;
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+      }
+
+      /* Style the form header */
+      .form-header {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      /* Style the form inputs */
+      .form-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        border: 1px solid gray;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      /* Style the submit button */
+      .form-submit-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: darkcyan;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Style the form for smaller screens */
+      @media (max-width: 500px) {
+        .form-container {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="home.html" onsubmit="validate()">
+        <div class="form-header">
+          <h2>Login form</h2>
+        </div>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Username"
+          id="username"
+          required
+        />
+        <input
+          type="password"
+          class="form-input"
+          placeholder="Password"
+          id="password"
+          required
+        />
+        <input type="submit" class="form-submit-btn" value="Submit"/>
+      </form>
+    </div>
+
+    
+  </body>
+</html>

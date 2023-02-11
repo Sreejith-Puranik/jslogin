@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <center>
+        <h1>Welcome <span id="usertitle">Username</span></h1>
+    </center>
+
+    <script>
+        var username = sessionStorage.getItem("user");
+        console.log(typeof(username) + username);
+        if(username!=null){
+            
+            console.log(typeof(username) + username);
+            document.getElementById("usertitle").innerText = username;
+        }
+    </script>
+</body>
+</html>
